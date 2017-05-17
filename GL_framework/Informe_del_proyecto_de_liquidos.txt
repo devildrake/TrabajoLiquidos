@@ -1,0 +1,14 @@
+Se ha conseguido simular correctamente el oleaje establecido, en este caso tres olas,
+una en X, una en Z y otra en (X,Z), cada una con unos valores distintos de freqüència y de 
+dirección, pero compartiendo una amplitud.
+
+Se ha establecido el sistema de colision con la esfera correctamente, la esfera varia su posición
+con respecto al oleaje, peor no modifica la malla ClothMesh, se ha hecho Tweekeable desde GUI la
+masa de la esfera, además de añadir un botón de reinicio, que reinicia las velocidades y posición
+inicial de la esfera, a una altura establecida pero con X y Z aleatorios,tambien existe una checkbox 
+de pausado, así como una serie de dragFloat para poder modificar un multiplicador para los vectores
+dirección de las olas, las freqüencias de cada ola, y la amplitud general.
+
+Al resolver la colisión y flotabilidad de la esfera, se ha intentado establecer un sistema de 
+interpolación, el cual ha quedado comentado, y finalmente se ha optado por hacer una media de 
+las alturas de los 4 puntos más cercanos al la esfera al colisionar esta.
